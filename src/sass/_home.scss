@@ -1,0 +1,112 @@
+
+#showIt{
+    width:100%;
+    height: 630px;
+    @include navbar_color($secondary_color, $dark_color);
+    background-size: cover;
+    
+    position: relative;
+    
+    & #particles{
+        position: absolute;
+        width:100%;
+        height: 100%;
+    
+    }
+    & .contents{
+        width: 100%;
+        height: 100%;
+
+        margin-top:8.5rem;
+         h1{
+            font-weight: bolder;
+            font-size: 3rem;
+        }
+        .form-group{
+        .btn{
+            font-weight: bolder;
+        }
+        
+        
+        }
+
+
+
+
+    }
+
+
+
+
+}
+#coins{
+table{
+    
+    & thead th{
+        border-bottom: 1px solid #dee2e6;
+        padding:.7rem;
+    }
+    & tr td{
+        padding:1rem;
+        font-size:1.5rem;
+        strong{
+font-weight: bolder;
+
+
+
+        }
+    }
+}
+
+
+
+}
+#chart {
+    max-width:300px;
+    margin: 35px auto;
+    opacity: 0.9;
+  }
+
+
+.top-of-page{
+    background: transparent;
+}
+.setbakground{
+    @include navbar_color($secondary_color, $dark_color);
+}
+
+
+@include mediasm{
+#showIt{
+    & .contents{
+        h1{
+            font-size:2.5rem;
+            
+        }
+
+
+
+    }
+
+
+
+}
+#coins{
+    & table{
+tr td{
+padding: 0.8rem;
+font-size:1rem;
+
+
+
+}
+
+
+
+
+    }
+}
+
+
+}
+
