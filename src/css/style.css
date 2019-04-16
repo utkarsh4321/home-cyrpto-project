@@ -316,7 +316,11 @@ input:checked + .slider:before {
   #showIt #particles {
     position: absolute;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
   #showIt .contents {
     width: 100%;
     height: 100%;
@@ -334,6 +338,9 @@ input:checked + .slider:before {
 #coins table tr td {
   padding: 1rem;
   font-size: 1.5rem; }
+  #coins table tr td .coinImg img {
+    max-width: 1.5rem;
+    height: 2rem; }
   #coins table tr td strong {
     font-weight: bolder; }
 
@@ -341,6 +348,75 @@ input:checked + .slider:before {
   max-width: 300px;
   margin: 35px auto;
   opacity: 0.9; }
+
+#descriptions {
+  overflow-x: hidden; }
+  #descriptions h1 {
+    font-weight: bold; }
+  #descriptions .lister {
+    margin-top: 3.5rem; }
+  #descriptions .portfolios h5 {
+    font-weight: bolder;
+    color: #000; }
+  #descriptions .multiples {
+    margin-top: 4rem; }
+
+#trusted {
+  margin-top: 6rem; }
+  #trusted h1, #trusted h4 {
+    font-weight: bold; }
+  #trusted .kycs {
+    margin-top: 5rem; }
+    #trusted .kycs p {
+      font-size: .8rem; }
+
+#getting-started {
+  margin-top: 4rem; }
+  #getting-started h1, #getting-started h4 {
+    font-weight: bold; }
+  #getting-started .multi li {
+    position: relative;
+    width: 33.33%; }
+  #getting-started .multi li:after {
+    content: '';
+    width: 100%;
+    background: #ddd;
+    height: 1px;
+    position: absolute;
+    top: 3rem;
+    left: -50%;
+    z-index: -1; }
+  #getting-started .multi li:first-child::after {
+    content: none; }
+  #getting-started .multi img {
+    background: #fff;
+    padding: 1rem; }
+
+#counters {
+  background: #4ca1af !important;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #073b5e, #4ca1af) !important;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #073b5e, #4ca1af) !important;
+  margin-top: 8rem;
+  width: 100%;
+  height: 60vh;
+  padding: 2rem; }
+  #counters h1 {
+    font-weight: bold; }
+
+#team {
+  margin-top: 4rem; }
+  #team h1 {
+    font-weight: bold;
+    text-align: center; }
+  #team .card {
+    transition: all;
+    transition-duration: 1s;
+    cursor: pointer; }
+  #team .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
 
 .top-of-page {
   background: transparent; }
@@ -352,7 +428,27 @@ input:checked + .slider:before {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #073b5e, #4ca1af) !important; }
 
+@media (min-width: 800px) {
+  #descriptions .multiples img {
+    max-width: 46rem; } }
+
+@media (max-width: 700px) {
+  .multiples img {
+    width: 100%; }
+  .multi h4 {
+    font-size: .8rem; }
+  .multi img {
+    width: 60px; }
+  .multi div {
+    padding: .7rem; }
+  #counters {
+    margin-top: 4rem;
+    width: 100%;
+    height: 100%; } }
+
 @media (max-width: 600px) {
+  h1 {
+    font-size: 2rem; }
   #showIt .contents h1 {
     font-size: 2.5rem; }
   #coins table tr td {

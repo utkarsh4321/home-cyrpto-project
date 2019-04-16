@@ -76,7 +76,7 @@ $(function () {
 
 // // AOS INITILIZATION
 
-//   AOS.init();
+AOS.init();
 
 //   INITIATIZATION OF THE MORPH TEXT
 $("#js-rotating").Morphext({
@@ -91,6 +91,11 @@ $("#js-rotating").Morphext({
     }
 });
   
+// INITIALIZATION OF THE COUNTER UP JS
+$('.counter').counterUp({
+    delay: 10,
+    time: 1000
+});
 
 
 
