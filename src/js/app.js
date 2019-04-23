@@ -18,9 +18,16 @@
 //  PARTICLE JS INITIALIATION
 /*------------------------------*/
 
-particlesJS.load('particles', './js/particlesjs-config.json', function() {
-  console.log('callback - particles.js config loaded');
-});
+
+    particlesJS.load('particles', './js/particlesjs-config.json', function() {
+        console.log('callback - particles.js config loaded');
+      });
+
+
+
+
+
+
 
 
 
@@ -33,12 +40,16 @@ console.log(window.screen.width)
 $(window).on("scroll", function() {
     var scrollPos = $(window).scrollTop();
     if ($(window).width() > 700 && scrollPos <= 0) {
+     
         $('.navbar').addClass('top-of-page');
         $('.navbar').removeClass('setbakground');
+      
     
     } else {
+       
         $('.navbar').removeClass('top-of-page');
         $('.navbar').addClass('setbakground');
+
     }
 });
 /*------------------------*/
@@ -50,10 +61,17 @@ $(window).on("scroll", function() {
 
   function resize() {
       if ($window.width() < 700) {
-          return $html.addClass('setbakground');
+
+          return{
+
+
+           back: $html.addClass('setbakground'),
+           fix: $html.removeClass('fixed-top')
+}
       }
 
       $html.removeClass('setbakground');
+      $html.addClass('fixed-top');
   }
 
   $window

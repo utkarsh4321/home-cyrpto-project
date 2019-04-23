@@ -187,7 +187,7 @@ cursor: pointer;
 .card:hover{
 
 
-transform: scale(1.1);
+transform: scale(1.06);
 box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
@@ -264,8 +264,9 @@ height: 100%;
     }
 #showIt{
     & .contents{
+    margin-top:5rem;
         h1{
-            font-size:2.5rem;
+            font-size:2.4rem;
             
         }
 
