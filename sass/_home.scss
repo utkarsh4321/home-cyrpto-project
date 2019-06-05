@@ -1,0 +1,302 @@
+
+#showIt{
+    width:100%;
+    height: 630px;
+    @include navbar_color($secondary_color, $dark_color);
+
+    background-size: cover;
+    
+    position: relative;
+    
+    & #particles{
+        position: absolute;
+        width:100%;
+        height: 100%;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+    
+    }
+    & .contents{
+        width: 100%;
+        height: 100%;
+
+        margin-top:8.5rem;
+         h1{
+            font-weight: bolder;
+            font-size: 3rem;
+        }
+        .form-group{
+        .btn{
+            font-weight: bolder;
+        }
+        
+        
+        }
+
+
+
+
+    }
+
+
+
+
+}
+#coins{
+table{
+    
+    & thead th{
+        border-bottom: 1px solid #dee2e6;
+        padding:.7rem;
+    }
+    & tr td{
+        padding:1rem;
+        font-size:1.5rem;
+        .coinImg{
+            img{
+                max-width:1.5rem;
+                height:2rem;
+            }
+        }
+       strong{
+font-weight: bolder;
+
+
+
+        }
+    }
+}
+
+
+
+}
+#chart {
+    max-width:300px;
+    margin: 35px auto;
+    opacity: 0.9;
+  }
+// DESCRIPTION SECTION ENDED
+
+#descriptions{
+    overflow-x: hidden;
+    h1{
+        font-weight: bold;
+    }
+.lister{
+margin-top:3.5rem;
+
+}
+.portfolios{
+h5{
+    font-weight:bolder;
+    color:#000;
+}
+
+
+
+
+}
+.multiples{
+    margin-top:4rem;
+}
+    
+
+
+
+
+}
+#trusted{
+margin-top:6rem;
+
+h1,h4{
+    font-weight: bold;
+}
+.kycs{
+    margin-top:5rem;
+    p{
+        font-size:.8rem;
+    }
+}
+
+}
+#getting-started{
+margin-top:4rem;
+h1,h4{
+font-weight: bold;
+}
+.multi{
+& li{
+    position: relative;
+    width: 33.33%;
+}
+& li:after{
+content: '';
+width:100%;
+background:#ddd;
+height: 1px;
+position:absolute;
+top:3rem;
+left:-50%;
+z-index: -1;
+}
+
+
+& li:first-child::after{
+    content: none;
+}
+
+
+
+img{
+    background: #fff;
+    padding:1rem;
+    
+}
+
+
+
+}
+}
+#counters{
+    @include navbar_color($secondary_color, $dark_color);
+margin-top:8rem;
+width:100%;
+height:60vh;
+padding:2rem;
+
+h1{
+    font-weight: bold;
+}
+}
+#team{
+    margin-top:4rem;
+h1{
+    font-weight: bold;
+    text-align: center;
+
+}
+.card{
+transition: all;
+transition-duration: 1s;
+cursor: pointer;
+
+
+}
+.card:hover{
+
+
+transform: scale(1.06);
+box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+
+}
+// ALL SECTION ENDED
+
+.top-of-page{
+    background: transparent;
+}
+.setbakground{
+    @include navbar_color($secondary_color, $dark_color);
+}
+
+
+@media(min-width:800px){
+    #descriptions{
+        .multiples{
+
+            img{
+                max-width:46rem;
+            }
+            
+            
+            }
+
+
+    }
+
+
+}
+
+@media(max-width:700px){
+    .multiples{
+
+        img{
+            width:100%;
+        }
+        
+        
+        }
+        .multi{
+            h4{
+                font-size:.8rem;
+            }
+            img{
+                width:60px;
+            }
+            div{
+               padding:.7rem;
+             }
+        
+                
+                
+
+
+        }
+        #counters{
+margin-top:4rem;
+width: 100%;
+height: 100%;
+
+
+
+        }
+}
+
+
+
+@include mediasm{
+    h1{
+        font-size:2rem;
+        
+    }
+#showIt{
+    & .contents{
+    margin-top:5rem;
+        h1{
+            font-size:2.4rem;
+            
+        }
+
+
+
+    }
+
+
+
+}
+#coins{
+    & table{
+        
+        
+        
+tr td{
+padding: 0.8rem;
+font-size:1rem;
+
+
+
+}
+
+
+
+
+    }
+}
+
+
+}
+
+
